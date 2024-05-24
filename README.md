@@ -1,4 +1,4 @@
-# Docker build for gnuradio with plugins for LoRa decode.
+# Docker build for gnuradio 3.10 with plugins for LoRa decode.
 
 Tested with hackrf.
 
