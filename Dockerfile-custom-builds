@@ -1,0 +1,72 @@
+FROM custom/sdr-apps
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+
+# Install GR-ADSB
+# RUN cd && \
+#     git clone https://github.com/mhostetter/gr-adsb && \
+#    cd gr-adsb && \
+#    git checkout 50e062988c3caa80d932a9752b16fc11ad68c6e3 && \
+#    mkdir build && \
+#    cd build && \
+#    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+#    make clean && \
+#    make -j8 install
+    
+# Instal SoapyHackrf
+# RUN cd && \
+#    git clone https://github.com/pothosware/SoapyHackRF.git && \
+#    cd SoapyHackRF && \
+#    git checkout 8d2e7beebb4c451609cb0cee236fa4d20a0e28b1 && \
+#    mkdir build && \
+#    cd build && \
+#    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+#    make clean && \
+#    make -j8 install
+    
+
+# Instal SoapyPluto
+# RUN cd && \
+#    git clone https://github.com/pothosware/SoapyPlutoSDR.git && \
+#    cd SoapyPlutoSDR && \
+#    git checkout a2431282fc258c692374ebfed507ac558ae29b15 && \
+#    mkdir build && \
+#    cd build && \
+#    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+#    make clean && \
+#    make -j8 install
+    
+# Instal Osmocom
+# RUN cd && \
+#    git clone https://gitea.osmocom.org/sdr/gr-osmosdr.git && \
+#    cd gr-osmosdr && \
+#    git checkout 9b386707d81ac8117a6c26011a757db40aa505ea && \
+#    mkdir build && \
+#    cd build && \
+#    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+#    make clean && \
+#    make -j8 install
+    
+# RUN cd && \
+#    git clone https://github.com/jkadbear/gr-lora.git && \
+#    cd gr-lora && \
+#    mkdir build && cd build && \
+#    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+#    make clean && \
+#    make -j8 install
+
+RUN cd && \
+    git clone https://github.com/tapparelj/gr-lora_sdr.git && \
+    cd gr-lora_sdr && \
+    mkdir build && cd build && \
+    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+    make clean && \
+    make -j8 install
+
+
+RUN useradd -m gnuradio
+
+USER gnuradio

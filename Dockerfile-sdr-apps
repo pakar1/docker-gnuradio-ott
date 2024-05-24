@@ -1,0 +1,21 @@
+FROM custom/sdr-ubuntu-base
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+USER root
+
+
+#install hackrf
+RUN apt install -y hackrf libhackrf-dev libhackrf0
+
+# gr-osmosdr
+RUN apt install -y gnuradio gnuradio-dev gr-fosphor gr-rds gr-air-modes
+
+# TODO: Pulls in xorg. 
+# RUN apt install -y cubicsdr
+
+RUN apt install -y gqrx-sdr
+
+RUN apt install -y libsoapysdr0.8 libsoapysdr-dev libsoapysdr-doc soapysdr-module-hackrf \
+                   soapysdr-module-osmosdr soapysdr-module-rtlsdr soapysdr-tools
+
