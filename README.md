@@ -1,5 +1,7 @@
 # Docker build for gnuradio with external plugins
 
+It's intended audience is to allow a stable enviroment for GnuRadio.
+As it has a development-enviroment included it's secondary audience is to assist GnuRadio OOT module developers when migrating to GnuRadio 3.10.
 
 ### Uses
 * Uses Ubuntu 22.04 as base.
@@ -11,6 +13,8 @@ Should still work should work for all osmocom enabled drivers in the ubuntu 22.0
 
 ### Currently compiled Gnuradio modules
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
+* gr-satellites (https://github.com/daniestevez/gr-satellites)
+* gr-adapt (https://github.com/karel/gr-adapt)
 (Free free to send a PR for any additions)
 
 
