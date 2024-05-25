@@ -15,7 +15,7 @@ Should still work should work for all osmocom enabled drivers in the ubuntu 22.0
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
 * gr-satellites (https://github.com/daniestevez/gr-satellites)
 * gr-adapt (https://github.com/karel/gr-adapt)
-(Free free to send a PR for any additions)
+<br /><br />(Free free to send a PR for any additions)
 
 
 ### Dockerfiles
