@@ -9,7 +9,7 @@
 * HackRF One.
 Should still work should work for all osmocom enabled drivers in the ubuntu 22.04 package.
 
-### Currently built Gnuradio modules
+### Currently compiled Gnuradio modules
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
 (Free free to send a PR for any additions)
 
@@ -27,3 +27,6 @@ Should still work should work for all osmocom enabled drivers in the ubuntu 22.0
 ### To run image
 > $ ./docker_run.sh
 
+### Shared folder.
+* Create /home/gnuradio on your host and have this as shared storage between container and host. Allows gnuradio settings etc to be saved between builds/sessions.
+* As /home/gnuradio is setup to be shared it will make life easier if you update "Dockerfile-custom-builds" and set the uid to the same UID as your normal user.
