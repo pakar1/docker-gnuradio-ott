@@ -67,6 +67,7 @@ RUN cd && \
     make -j8 install
 
 
-RUN useradd -m gnuradio
+RUN useradd --uid 1000 -m gnuradio
 
 USER gnuradio
+
