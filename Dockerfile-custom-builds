@@ -66,6 +66,26 @@ RUN cd && \
     make clean && \
     make -j8 install
 
+RUN cd && \
+   git clone https://github.com/daniestevez/gr-satellites.git && \
+   cd gr-satellites && \
+   git checkout maint-3.10 && \
+   mkdir build && \
+   cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+   make clean && \
+   make -j8 install
+
+
+RUN cd && \
+   git clone https://github.com/karel/gr-adapt.git && \
+   cd gr-adapt && \
+   mkdir build && \
+   cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+   make clean && \
+   make -j8 install
+
 
 RUN useradd --uid 1000 -m gnuradio
 

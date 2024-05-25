@@ -19,3 +19,6 @@ RUN apt install -y gqrx-sdr
 RUN apt install -y libsoapysdr0.8 libsoapysdr-dev libsoapysdr-doc soapysdr-module-hackrf \
                    soapysdr-module-osmosdr soapysdr-module-rtlsdr soapysdr-tools
 
+
+# Add build-dependencies.
+RUN apt install -y libsndfile1-dev
