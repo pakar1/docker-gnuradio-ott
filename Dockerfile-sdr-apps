@@ -27,4 +27,4 @@ RUN apt install -y libsoapysdr0.8 libsoapysdr-dev libsoapysdr-doc soapysdr-modul
 RUN apt install -y libsndfile1-dev
 
 RUN apt-get clean
-RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
