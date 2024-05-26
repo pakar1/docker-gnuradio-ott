@@ -15,6 +15,7 @@ As it has a development-enviroment included it's secondary audience is to assist
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
 * gr-satellites (https://github.com/daniestevez/gr-satellites)
 * gr-adapt (https://github.com/karel/gr-adapt)
+* gr-inspector (https://github.com/radioconda/gr-inspector)
 <br /><br />(Feel free to send a PR for any additions)
 
 

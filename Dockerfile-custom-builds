@@ -5,6 +5,16 @@ ENV DEBIAN_FRONTEND=noninteractive
 USER root
 
 RUN cd && \
+   git clone https://github.com/radioconda/gr-inspector.git && \
+   cd gr-inspector && \
+   mkdir build && \
+   cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+   make clean && \
+   make -j8 install
+
+
+RUN cd && \
     git clone https://github.com/tapparelj/gr-lora_sdr.git && \
     cd gr-lora_sdr && \
     mkdir build && cd build && \
