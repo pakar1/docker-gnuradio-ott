@@ -9,7 +9,7 @@ As it has a development-enviroment included it's secondary audience is to assist
 
 ### Tested SDR HW
 * HackRF One.
-<br /><br />Should still work should work for all osmocom enabled drivers in the ubuntu 24.04 package.
+<br /><br />Should still work for all osmocom enabled drivers in the ubuntu 24.04 package.
 
 ### Currently compiled Gnuradio modules
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
