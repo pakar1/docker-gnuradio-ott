@@ -87,7 +87,10 @@ RUN cd && \
    make -j8 install
 
 
-RUN useradd --uid 1000 -m gnuradio
+RUN userdel -r ubuntu
+RUN mkdir /home/gnuradio
+RUN useradd --uid 1000 -m gnuradio -d /home/gnuradio
+RUN chown -R gnuradio /home/gnuradio
 
 USER gnuradio
 

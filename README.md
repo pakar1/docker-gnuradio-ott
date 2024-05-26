@@ -4,12 +4,12 @@ It's intended audience is to allow a stable enviroment for GnuRadio.
 As it has a development-enviroment included it's secondary audience is to assist GnuRadio OOT module developers when migrating to GnuRadio 3.10.
 
 ### Uses
-* Uses Ubuntu 22.04 as base.
+* Uses Ubuntu 24.04 as base.
 * Gnuradio 3.10 (from ubuntu repo)
 
 ### Tested SDR HW
 * HackRF One.
-<br /><br />Should still work should work for all osmocom enabled drivers in the ubuntu 22.04 package.
+<br /><br />Should still work should work for all osmocom enabled drivers in the ubuntu 24.04 package.
 
 ### Currently compiled Gnuradio modules
 * gr-lora_sdr (https://github.com/tapparelj/gr-lora_sdr)
