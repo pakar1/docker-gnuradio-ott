@@ -16,6 +16,7 @@ As it has a development-enviroment included it's secondary audience is to assist
 * gr-satellites (https://github.com/daniestevez/gr-satellites)
 * gr-adapt (https://github.com/karel/gr-adapt)
 * gr-inspector (https://github.com/radioconda/gr-inspector)
+* gr-difi (https://github.com/DIFI-Consortium/gr-difi.git)
 <br /><br />(Feel free to send a PR for any additions)
 
 
