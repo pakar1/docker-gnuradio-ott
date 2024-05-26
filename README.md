@@ -17,6 +17,7 @@ As it has a development-enviroment included it's secondary audience is to assist
 * gr-adapt (https://github.com/karel/gr-adapt)
 * gr-inspector (https://github.com/radioconda/gr-inspector)
 * gr-difi (https://github.com/DIFI-Consortium/gr-difi.git)
+* gr-satnogs (https://gitlab.com/librespacefoundation/satnogs/gr-satnogs/-/tree/gnuradio-3.10?ref_type=heads)
 <br /><br />(Feel free to send a PR for any additions)
 
 
