@@ -38,5 +38,7 @@ RUN mkdir /home/gnuradio
 RUN useradd --uid 1000 -m gnuradio -d /home/gnuradio
 RUN chown -R gnuradio /home/gnuradio
 
+RUN apt-get clean
+
 USER gnuradio
 
