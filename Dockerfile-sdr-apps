@@ -8,8 +8,11 @@ USER root
 #install hackrf
 RUN apt install -y hackrf libhackrf-dev libhackrf0
 
-# gr-osmosdr
-RUN apt install -y gnuradio gnuradio-dev gr-fosphor gr-rds gr-air-modes
+RUN apt install -y gnuradio gnuradio-dev
+
+RUN apt install -y gr-fosphor gr-rds gr-air-modes gr-limesdr gr-radar gr-radar-doc gr-limesdr gr-hpsdr gr-gsm gr-funcube
+
+RUN apt install -y gnss-sdr
 
 # TODO: Pulls in xorg. 
 # RUN apt install -y cubicsdr
