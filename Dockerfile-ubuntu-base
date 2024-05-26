@@ -1,5 +1,4 @@
-FROM phusion/baseimage:24.04
-# FROM ubuntu:24.04
+FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -8,8 +7,6 @@ USER root
 RUN apt update
 
 RUN apt install -y software-properties-common
-
-RUN add-apt-repository ppa:gnuradio/gnuradio-releases-3.8
 
 # Force x-libs to be included without xorg.
 RUN apt-get install -y --no-install-recommends xterm
@@ -32,3 +29,4 @@ RUN apt install -y cmake libboost-all-dev swig liborc-dev python3-sphinx doxygen
 
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
