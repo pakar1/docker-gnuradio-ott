@@ -20,6 +20,7 @@ The docker's intended to:
 * gr-inspector (https://github.com/radioconda/gr-inspector)
 * gr-difi (https://github.com/DIFI-Consortium/gr-difi.git)
 * gr-satnogs (https://gitlab.com/librespacefoundation/satnogs/gr-satnogs/-/tree/gnuradio-3.10?ref_type=heads)
+* gr-ieee802-15-4 (https://github.com/bastibl/gr-ieee802-15-4.git)
 <br /><br />(Feel free to send a PR for any additions)
 
 

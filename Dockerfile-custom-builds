@@ -7,6 +7,22 @@ USER root
 RUN apt update
 
 ################################################################################
+
+# https://github.com/bastibl/gr-ieee802-15-4.git
+RUN cd && \
+   git clone https://github.com/bastibl/gr-ieee802-15-4.git && \
+   cd gr-ieee802-15-4 && \
+   git checkout maint-3.10 && \
+   mkdir build && \
+   cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+   make clean && \
+   make -j8 install
+
+
+################################################################################
+
+################################################################################
 RUN apt install -y libboost-dev \
       libitpp-dev \
       libboost-date-time-dev \
