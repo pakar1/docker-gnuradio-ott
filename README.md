@@ -34,6 +34,11 @@ As it has a development-enviroment included it's secondary audience is to assist
 ### To run image
 > $ ./docker_run.sh
 
+#### Set module path
+Before starting gnuradio-companion the module path must be set manually at the moment.
+> $ export PYTHONPATH=/usr/lib/python3.12/dist-packages:/usr/lib/python3.12/site-packages:$PYTHONPATH
+
+
 ### Shared folder.
 * Create /home/gnuradio on your host and have this as shared storage between container and host. Allows gnuradio settings etc to be saved between builds/sessions.
 * As /home/gnuradio is setup to be shared it will make life easier if you update "Dockerfile-custom-builds" and set the uid to the same UID as your normal user.
