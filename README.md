@@ -1,7 +1,9 @@
 # Docker build for gnuradio with external plugins
 
-It's intended audience is to allow a stable enviroment for GnuRadio.
-As it has a development-enviroment included it's secondary audience is to assist GnuRadio OOT module developers when migrating to GnuRadio 3.10.
+The docker's intended to:
+* To allow a stable enviroment for GnuRadio runtime.
+* To allow users a easy way to build GnuRadio OTT modules without messing with their day-to-day system.
+* To allow OTT module developers a simple enviroment when porting from previous version of GnuRadio.
 
 ### Uses
 * Uses Ubuntu 24.04 as base.
