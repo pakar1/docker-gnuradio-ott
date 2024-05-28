@@ -21,8 +21,21 @@ The docker's intended to:
 * gr-difi (https://github.com/DIFI-Consortium/gr-difi.git)
 * gr-satnogs (https://gitlab.com/librespacefoundation/satnogs/gr-satnogs/-/tree/gnuradio-3.10?ref_type=heads)
 * gr-ieee802-15-4 (https://github.com/bastibl/gr-ieee802-15-4.git)
+* gr-iridium (https://github.com/muccc/gr-iridium.git)
 <br /><br />(Feel free to send a PR for any additions)
 
+### OTT modules included from Ubuntu repo
+* gr-air-modes
+* gr-fosphor
+* gr-funcube
+* gr-gsm
+* gr-hpsdr
+* gr-iqbal
+* gr-limesdr
+* gr-osmosdr
+* gr-radar
+* gr-rds
+<br />
 
 ### Dockerfiles
 * Dockerfile-ubuntu-base - Ubuntu base and requirements

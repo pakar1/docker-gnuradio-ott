@@ -6,6 +6,24 @@ USER root
 
 RUN apt update
 
+
+################################################################################
+
+RUN apt install -y gnuradio-dev \
+                   libvolk-dev \
+                   pybind11-dev \
+                   libsndfile1-dev
+
+RUN cd && \
+   git clone https://github.com/muccc/gr-iridium.git && \
+   cd gr-iridium && \
+   git checkout f90bc7d && \
+   mkdir build && \
+   cd build && \
+   cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
+   make clean && \
+   make -j8 install
+
 ################################################################################
 
 # https://github.com/bastibl/gr-ieee802-15-4.git
@@ -18,9 +36,6 @@ RUN cd && \
    cmake -DCMAKE_INSTALL_PREFIX=/usr .. && \
    make clean && \
    make -j8 install
-
-
-################################################################################
 
 ################################################################################
 RUN apt install -y libboost-dev \
